@@ -1,0 +1,54 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="160" y1="320" x2="930" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7E8A8"/>
+      <stop offset="0.48" stop-color="#E2BA5C"/>
+      <stop offset="1" stop-color="#B9852A"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" fill="#050708"/>
+
+  <g filter="url(#shadow)">
+    <path d="M280 532C280 415 365 320 482 320H630C744 320 828 412 828 528V648H280V532Z" fill="#0C1714"/>
+    <path d="M298 508C298 390 382 298 500 298H624C732 298 822 394 822 514V638H298V508Z" fill="#1A2E24"/>
+    <path d="M331 542C331 445 404 367 501 367H615C711 367 786 438 786 536V652H331V542Z" fill="#183924"/>
+
+    <path d="M354 452C433 391 489 397 579 360C631 339 681 343 723 365L782 595L629 645L523 679L415 656L354 452Z" fill="#214A2F"/>
+    <path d="M305 580L420 489L457 565L401 679L305 580Z" fill="#0E1718"/>
+    <path d="M778 590L841 504L894 572L842 690L778 590Z" fill="#0E1718"/>
+
+    <path d="M514 391C543 369 581 357 620 357C673 357 719 379 753 416L807 559H456L514 391Z" fill="#0D1A17"/>
+
+    <path d="M517 606H714V998H517V606Z" fill="#0F1718"/>
+    <path d="M468 671L594 615L648 732L599 1000H422L468 671Z" fill="#101919"/>
+    <path d="M758 676L831 620L878 741L824 1000H675L758 676Z" fill="#101919"/>
+
+    <path d="M527 410C553 380 596 364 633 364C670 364 715 383 748 416L704 565H532L527 410Z" fill="#123321"/>
+    <path d="M558 425C587 405 619 398 651 398C687 398 724 411 755 434L724 552H580L558 425Z" fill="#1C4730"/>
+
+    <path d="M629 430C658 395 700 375 737 379C780 383 819 415 829 459L785 545H627L629 430Z" fill="#0C1513"/>
+    <path d="M447 430C418 419 382 418 351 435L326 509L392 535L447 430Z" fill="#0A0E0F"/>
+    <path d="M815 442C844 425 877 427 907 440L936 516L877 535L815 442Z" fill="#0A0E0F"/>
+
+    <path d="M615 289C661 270 707 273 759 297L784 349H591L615 289Z" fill="#173D2A"/>
+    <path d="M585 379L682 318L739 369L640 413L585 379Z" fill="#0D1515"/>
+
+    <path d="M641 482L680 456H711L748 482L714 535H662L641 482Z" fill="#D9AF57"/>
+
+    <path d="M576 706L618 682H692L741 708L713 760H595L576 706Z" fill="#D8AF60"/>
+
+    <path d="M622 683H699V833H622V683Z" fill="#11191A"/>
+    <path d="M612 493H717V612H612V493Z" fill="#0C1415"/>
+
+    <path d="M448 618L485 536L532 533L562 594L517 684L456 676L448 618Z" fill="#0A0E10"/>
+    <path d="M784 620L747 536L700 533L670 594L715 684L776 676L784 620Z" fill="#0A0E10"/>
+  </g>
+
+  <g>
+    <text x="194" y="990" font-family="Impact, 'Arial Black', sans-serif" font-size="202" letter-spacing="2" fill="url(#gold)" stroke="#0A0C0D" stroke-width="8">SIDDHU</text>
+  </g>
+</svg>
