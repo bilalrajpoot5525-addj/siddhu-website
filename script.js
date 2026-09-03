@@ -5,6 +5,18 @@ const revealItems = document.querySelectorAll('.reveal');
 const yearEl = document.getElementById('year');
 const contactForm = document.querySelector('.contact-card');
 const faqItems = document.querySelectorAll('.faq-item');
+const assetImages = document.querySelectorAll('img[data-asset-key]');
+
+assetImages.forEach((image) => {
+  const fallbackSource = image.src;
+  const localSource = `assets/${image.dataset.assetKey}.jpg`;
+
+  image.addEventListener('error', () => {
+    image.src = fallbackSource;
+  }, { once: true });
+
+  image.src = localSource;
+});
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
