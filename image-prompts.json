@@ -1,0 +1,26 @@
+{
+  "house-5-marla": {
+    "filename": "house-5-marla.jpg",
+    "prompt": "A detailed exterior photograph of the modern, brick and stucco 5 Marla house, showing its full facade from across the street. The lighting is clean evening light, highlighting the textures. Isolated as a single asset for web development."
+  },
+  "residential-plot": {
+    "filename": "residential-plot.jpg",
+    "prompt": "A clear view of the corner 5 Marla plot of land, with the blue signboard clearly reading \"Imranabad ST #08\" and \"5 MARLA PLOT\" (in Urdu and English). The yellow/black posts and boundary markers are distinct. Isolated as a single asset for web development."
+  },
+  "commercial-shop": {
+    "filename": "commercial-shop.jpg",
+    "prompt": "A detailed exterior view of the multi-story commercial shop building on Main Tower Road, showing the storefronts and the main street context. The building facade and local shops are clear. Isolated as a single asset for web development."
+  },
+  "street-scene": {
+    "filename": "street-scene.jpg",
+    "prompt": "A realistic, ground-level photograph of the specific dusty street corner with the parked motorcycle and distant Mosque minaret. The depth and character of the local street are captured. Isolated as a single asset for web development."
+  },
+  "modern-workspace": {
+    "filename": "modern-workspace.jpg",
+    "prompt": "A top-down view of the clean, modern desk layout, with the silver laptop, desk phone (screen showing 'NEO7'), notebook, and a coffee cup, arranged neatly on a clean white desk. Isolated as a single asset for web development."
+  },
+  "luxury-living-room": {
+    "filename": "luxury-living-room.jpg",
+    "prompt": "High-end luxury modern living room interior with clean architectural lines, minimalist furniture, and large floor-to-ceiling windows. Natural sunlight flooding the space. A subtle \"S\" monogram integrated into the modern fireplace texture. Real estate portfolio quality, highly detailed, photorealistic, cinematic lighting."
+  }
+}
