@@ -228,25 +228,82 @@ if ('IntersectionObserver' in window) {
   revealItems.forEach((item) => item.classList.add('visible'));
 }
 
+const faqToggle = document.querySelector('.faq-toggle');
+const faqVisibleLimit = 5;
+
+const syncFaqAnswerHeights = () => {
+  faqItems.forEach((item) => {
+    const answer = item.querySelector('.faq-answer');
+    const question = item.querySelector('.faq-question');
+    if (!answer || !question) return;
+
+    if (item.classList.contains('active')) {
+      answer.style.maxHeight = `${answer.scrollHeight}px`;
+      question.setAttribute('aria-expanded', 'true');
+    } else {
+      answer.style.maxHeight = '0px';
+      question.setAttribute('aria-expanded', 'false');
+    }
+  });
+};
+
+const updateFaqVisibility = () => {
+  const showAll = faqToggle?.dataset.mode === 'all';
+  faqItems.forEach((item, index) => {
+    const isVisible = showAll ? true : index < faqVisibleLimit;
+    item.classList.toggle('is-hidden', !isVisible);
+  });
+
+  if (faqToggle) {
+    faqToggle.textContent = showAll ? 'Show less FAQs' : 'View more FAQs';
+    faqToggle.setAttribute('aria-expanded', String(showAll));
+  }
+
+  syncFaqAnswerHeights();
+};
+
 faqItems.forEach((item) => {
   const button = item.querySelector('.faq-question');
-  if (!button) return;
+  const closeButton = item.querySelector('.faq-close');
+  const answer = item.querySelector('.faq-answer');
 
-  button.setAttribute('aria-expanded', String(item.classList.contains('active')));
+  if (!button || !answer) return;
 
   button.addEventListener('click', () => {
-    const isOpen = item.classList.contains('active');
+    const shouldOpen = !item.classList.contains('active');
 
     faqItems.forEach((faq) => {
       faq.classList.remove('active');
-      faq.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
     });
 
-    if (!isOpen) {
+    if (shouldOpen) {
       item.classList.add('active');
-      button.setAttribute('aria-expanded', 'true');
     }
+
+    syncFaqAnswerHeights();
   });
+
+  closeButton?.addEventListener('click', (event) => {
+    event.stopPropagation();
+    item.classList.remove('active');
+    syncFaqAnswerHeights();
+  });
+});
+
+faqToggle?.addEventListener('click', () => {
+  const nextMode = faqToggle.dataset.mode === 'all' ? 'more' : 'all';
+  faqToggle.dataset.mode = nextMode;
+  updateFaqVisibility();
+});
+
+updateFaqVisibility();
+
+document.addEventListener('click', (event) => {
+  const clickedInsideFaq = event.target.closest('.faq-item');
+  if (!clickedInsideFaq) {
+    faqItems.forEach((faq) => faq.classList.remove('active'));
+    syncFaqAnswerHeights();
+  }
 });
 
 if (contactForm) {

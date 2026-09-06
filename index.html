@@ -135,7 +135,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" />
   </head>
   <body>
     <header class="site-header main-header">
@@ -743,14 +742,17 @@
             <h2>Frequently Asked Questions About Chichawatni Property</h2>
           </div>
 
-          <div class="faq-list reveal">
+          <div class="faq-list reveal" id="faq-list">
             <div class="faq-item active">
               <button class="faq-question" type="button" aria-expanded="true">
                 <span>What should I check before buying property in Chichawatni?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>Compare the location, property type, asking price, access, utilities, ownership record and applicable documentation before making a decision. Naeem Siddhu can help buyers assess these factors against their budget and purpose.</p>
+                <div class="faq-answer-inner">
+                  <p>Compare the location, property type, asking price, access, utilities, ownership record and documentation before making a decision. Siddhu Property Advisor helps buyers review these factors against their budget and purpose.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
               </div>
             </div>
 
@@ -760,49 +762,328 @@
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>Match the seller&rsquo;s identity with available ownership records, review property details and boundaries, and confirm applicable documentation with the relevant land record centre before signing. The exact checks depend on the property.</p>
+                <div class="faq-answer-inner">
+                  <p>Match the seller&rsquo;s identity with the available ownership record, review boundaries, and confirm documentation with the relevant land record office before signing any agreement. The exact checks vary with the property.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
               </div>
             </div>
 
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
-                <span>What types of property are available in Chichawatni?</span>
+                <span>What property types are available in Chichawatni?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>Available opportunities can include houses, residential plots, commercial shops or plots, agricultural land and other investment-focused property. Availability and details depend on current inventory.</p>
+                <div class="faq-answer-inner">
+                  <p>Available options may include houses, residential plots, commercial shops, agricultural land and investment-focused property depending on the latest inventory and market demand.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
               </div>
             </div>
 
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
-                <span>How do property prices vary in Chichawatni?</span>
+                <span>How do property prices vary across Chichawatni?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>Asking prices vary by exact locality, area, road access, utilities, development, frontage, irrigation and intended use. Asking prices may differ from final transaction prices.</p>
+                <div class="faq-answer-inner">
+                  <p>Asking prices change by locality, road access, utility availability, development, frontage, irrigation and the intended use of the property. Final transaction prices may differ from the asking price.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
               </div>
             </div>
 
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
-                <span>Can you help sell property in Chichawatni?</span>
+                <span>Can you help me sell a property in Chichawatni?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>Siddhu Property Advisor provides selling guidance, property positioning and buyer communication for residential, commercial and land opportunities shown in its service scope.</p>
+                <div class="faq-answer-inner">
+                  <p>Yes. Siddhu Property Advisor can help sellers position their property, prepare key details, and communicate with relevant buyers based on the property type and target market.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
               </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item is-hidden">
               <button class="faq-question" type="button" aria-expanded="false">
-                <span>How can I contact a local property consultant in Chichawatni?</span>
+                <span>Is Hayatabad a good area for residential investment?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>Contact Naeem Siddhu by phone or WhatsApp using the details on this page to discuss a property, sale or local guidance.</p>
+                <div class="faq-answer-inner">
+                  <p>Hayatabad is often considered a practical residential choice due to its accessibility, family-focused setting and development profile. Buyers should still compare actual block details, property status and pricing.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
               </div>
             </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Which areas are best for commercial property in Chichawatni?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Commercial value often increases near road frontage, busy intersections, market clusters and local footfall areas. GT Road, Railway Road and central commercial blocks are common areas to compare.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Should I buy an agricultural plot or a residential plot?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>The better choice depends on your goal: farming and long-term land holding may suit agricultural property, while residential plots are often preferred for family use or future settlement planning.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do I know if a plot is approved or legally usable?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Check the approved status, location details, development information and relevant documentation before purchase. Local authority records and land verification are essential for this due diligence step.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What documents should I ask for before buying?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Ask for the ownership record, sale information, property record copy, identity details of the seller, and any relevant transfer documentation. The exact required documents depend on the type and location of the property.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can I get guidance for investment property purchases?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Yes. Investment guidance can compare the property’s location, target buyer demand, type of asset and probable resale or rental value. This helps you assess whether the purchase fits your financial strategy.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How quickly can I schedule a property consultation?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Availability varies, but detailed property discussions can often be arranged quickly based on the type of property you want to inspect or discuss. A direct call is typically the fastest way to start.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Do you help buyers compare multiple property options?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Yes. A buyer can compare residential, commercial, agricultural and investment options by price, location, features, use-case and documentation quality before making a final decision.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What makes a location valuable in Chichawatni?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Value often depends on road connectivity, nearby services, visibility, development pace, property type and the expected buyer or tenant demand in that area.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Are there opportunities for business or shop purchases?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Yes. Commercial shops and business-facing properties can be found in main market and road-side locations. These opportunities are typically evaluated based on visibility, traffic and business use.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do I decide between buying a plot and a finished house?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Choose a plot if you want flexibility or lower upfront cost, and a house if you want immediate move-in value. Your decision should reflect budget, timeline and intended use.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What is the best way to compare property opportunities?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Compare property price, size, access, title status, location quality, neighborhood demand and the purpose of the purchase before negotiating. This makes your decision more practical and less emotional.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can I buy property near the main roads?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Yes, but road-facing and high-visibility properties often come with different price structures and market expectations. These properties should be reviewed carefully against your intended purpose.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do local property advisors help with negotiation?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Advisors can help buyers interpret the property details, compare available asks, and clarify how location, title and market condition influence the final discussion.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Do you help with agricultural land buying decisions?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Yes. For agricultural land, it is important to review access, irrigation potential, land use and location before deciding. These factors can significantly affect value and practicality.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Is it useful to talk to an advisor before visiting a property?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Absolutely. A quick discussion can help focus your inspection on the property type, budget range, location, and risks that matter most before you spend time and travel.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do I know if a property is priced fairly?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Fair pricing depends on the exact location, development, visible features, property type and local demand. Comparing several relevant options usually helps determine whether the ask is reasonable.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What should I ask before buying a shop or commercial unit?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Check the frontage, business catchment, visibility, access, title details and whether the property fits your commercial goals. These factors can influence purchase value more than the structure alone.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can you help with residential property in nearby localities too?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Yes. Local guidance can extend to nearby town and locality comparisons when a buyer is evaluating price and accessibility across nearby residential zones.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What is the first step if I am a first-time buyer?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Start by clarifying your budget, expected property type, preferred location and timeline. Then compare a few relevant options and confirm the key documentation before moving ahead.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item is-hidden">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can you help me find a property that matches my budget and purpose?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Yes. Siddhu Property Advisor can help narrow the search by property type, budget, location and how you plan to use the property, so you can compare the most relevant opportunities.</p>
+                  <button class="faq-close" type="button" aria-label="Close answer">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-controls">
+            <button class="faq-toggle" type="button" data-mode="more" aria-expanded="false">View more FAQs</button>
           </div>
         </div>
       </section>
@@ -981,38 +1262,7 @@
       </div>
     </footer>
 
-    <a
-      class="floating-whatsapp"
-      href="https://wa.me/923063996764?text=Hello%20SIDDHU%2C%20I%20want%20property%20guidance%20in%20Chichawatni."
-      target="_blank"
-      rel="noopener"
-      aria-label="Chat on WhatsApp"
-    >
-      WhatsApp
-    </a>
-
     <script src="script.js"></script>
-    <script type="module">
-      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-      createChat({
-        webhookUrl: 'https://siddhu8989.app.n8n.cloud/webhook/1f04e6a0-15c2-4478-8a94-316cd82daf77/chat',
-        mode: 'window',
-        title: 'Siddhu Property Advisor',
-        subtitle: 'Real Estate & Property Assistance',
-        initialMessages: [
-          'Assalam-o-Alaikum! Welcome to Siddhu Property Advisor.',
-          'Aap ko Chichawatni mein kis kism ki property (Plot, Commercial, ya Ag-land) ke baare mein maloomat chahiye?'
-        ],
-        i18n: {
-          en: {
-            title: 'Siddhu Property Advisor',
-            subtitle: 'Online Real Estate Assistant',
-            inputPlaceholder: 'Apna paigham yahan likhein...'
-          }
-        },
-        theme: {
-          input: {
             color: '#1a1a1a',
             placeholderColor: '#71717a',
             backgroundColor: '#ffffff'
