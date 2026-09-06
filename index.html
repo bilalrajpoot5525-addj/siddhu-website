@@ -1267,39 +1267,29 @@
       import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
       createChat({
-        webhookUrl: 'https://siddhu8989.app.n8n.cloud/webhook/1f04e6a0-15c2-4478-8a94-316cd82daf77/chat',
-        mode: 'window',
-        title: 'Siddhu Property Advisor',
-        subtitle: 'Real Estate & Property Assistance',
+        webhookUrl: 'YOUR_N8N_WEBHOOK_URL',
+        showWelcomeScreen: false,
+        defaultLanguage: 'en',
         initialMessages: [
-          'Assalam-o-Alaikum! Welcome to Siddhu Property Advisor.',
-          'How can I help you with property guidance in Chichawatni today?'
+          'Assalam-o-Alaikum! Welcome to Siddhu Property Advisor. How can I help you with Chichawatni property today?'
         ],
         i18n: {
           en: {
             title: 'Siddhu Property Advisor',
             subtitle: 'Online Real Estate Assistant',
-            inputPlaceholder: 'Ask about a property or area...'
-          }
+            inputPlaceholder: 'Apna paigham yahan likhein...',
+          },
         },
-        theme: {
+        style: {
           primaryColor: '#00A884',
-          secondaryColor: '#111B21',
+          backgroundColor: '#0F172A',
           textColor: '#FFFFFF',
-          backgroundColor: '#111B21',
-          inputBackgroundColor: '#1b2a2f',
-          inputTextColor: '#FFFFFF'
+          userMessageColor: '#1E293B',
+          botMessageColor: '#00A884',
         }
       });
     </script>
 
     <script src="script.js"></script>
-            color: '#1a1a1a',
-            placeholderColor: '#71717a',
-            backgroundColor: '#ffffff'
-          }
-        }
-      });
-    </script>
   </body>
 </html>
