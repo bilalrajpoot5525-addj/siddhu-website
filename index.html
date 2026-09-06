@@ -134,6 +134,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -1261,6 +1262,36 @@
         </div>
       </div>
     </footer>
+
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+      createChat({
+        webhookUrl: 'https://siddhu8989.app.n8n.cloud/webhook/1f04e6a0-15c2-4478-8a94-316cd82daf77/chat',
+        mode: 'window',
+        title: 'Siddhu Property Advisor',
+        subtitle: 'Real Estate & Property Assistance',
+        initialMessages: [
+          'Assalam-o-Alaikum! Welcome to Siddhu Property Advisor.',
+          'How can I help you with property guidance in Chichawatni today?'
+        ],
+        i18n: {
+          en: {
+            title: 'Siddhu Property Advisor',
+            subtitle: 'Online Real Estate Assistant',
+            inputPlaceholder: 'Ask about a property or area...'
+          }
+        },
+        theme: {
+          primaryColor: '#00A884',
+          secondaryColor: '#111B21',
+          textColor: '#FFFFFF',
+          backgroundColor: '#111B21',
+          inputBackgroundColor: '#1b2a2f',
+          inputTextColor: '#FFFFFF'
+        }
+      });
+    </script>
 
     <script src="script.js"></script>
             color: '#1a1a1a',
